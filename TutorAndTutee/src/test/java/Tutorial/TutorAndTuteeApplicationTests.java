@@ -1,4 +1,4 @@
-package com.group.tutorandtutee;
+package Tutorial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
