@@ -1,4 +1,4 @@
-package com.group.tuteetutor;
+package Tutorial.Repository;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.repository.CrudRepository;

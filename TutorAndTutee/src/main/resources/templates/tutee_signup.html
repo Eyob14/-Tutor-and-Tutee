@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/landing.css}" rel="stylesheet" />
+    <link th:href="@{/css/common.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header
+        class="row align-items-center justify-content-center shadow bg-body"
+      >
+        <div class="header_name col text-end fs-5">
+          <b><a href="/">THE TUTOR</a></b>
+        </div>
+        <div class="header_nav col-8 text-center">
+          <a href="/">About</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Contact</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Terms</a>
+        </div>
+        <div class="header_signup col text-center pe-5">
+          <a href="/">
+            <button class="btn btn-sm btn-primary">
+              Sign In
+            </button>
+          </a>
+        </div>
+      </header>
+      <div
+        class="con landing_con row align-items-center justify-content-center"
+      >
+        <section class="col-md-9 col-lg-6 col-xl-7 landing_img_con">
+          <img class="img-fluid" th:src="@{/images/landing.jpg}" alt="" />
+        </section>
+        <section
+          class="col landing_desc_con p-5 align-items-center justify-content-center"
+        >
+          <div>
+            <form class="signin_con d-grid gap-2 rounded-3 p-3" action="/tutee" method="get">
+              <h4 class="text-center mb-3">Signing up as a Tutee . . .</h4>
+              <div class="row">
+              <div class="mb-2 col">
+                <label class="form-label" for="signup_first-name"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="signup_firs-tname"
+                  class="form-control form-control-md"
+                />
+              </div>
+              <div class="mb-2 col">
+                <label class="form-label" for="signup_last-name"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="signup_last-name"
+                  class="form-control form-control-md"
+                />
+              </div>
+            </div>
+              <div class="mb-2">
+                <label class="form-label" for="signup_email">Email</label>
+                <input
+                  type="email"
+                  id="signup_email"
+                  class="form-control form-control-md"
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label" for="first-name">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control form-control-md"
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label" for="signup_passsword"
+                  >Password</label
+                >
+                <input
+                type="password"
+                  id="signup_passsword"
+                  class="form-control form-control-md"
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label" for="signup_confirm-passsword"
+                  >Confirm Password</label
+                >
+                <input
+                type="password"
+                  id="signup_confirm-passsword"
+                  class="form-control form-control-md"
+                />
+              </div>
+              <button type="submit" class="btn  btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <footer class="text-center p-2 align-items-center justify-content-center">
+        <div class="footer_nav row">
+          <a href="/">About</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Contact</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Terms</a>
+          <br />
+          <br />
+        </div>
+        &copy; 2022 <b>THE TUTOR</b> - All Rights Reserved.
+      </footer>
+    </main>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+  </body>
+</html>
