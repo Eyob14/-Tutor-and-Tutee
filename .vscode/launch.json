@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TutorAndTuteeApplication<tutor-and-tutee>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.group.tutorandtutee.TutorAndTuteeApplication",
+            "projectName": "tutor-and-tutee",
+            "args": ""
+        }
+    ]
+}
