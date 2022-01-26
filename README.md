@@ -46,7 +46,9 @@ showing how the platform works:
 
     The tutor will be authorized to apply for posted works and see statical information  about works they have applied  in their dashboard.
     
-    
+# The admin of the page can access the application using the following user name and password:
+## username: admin
+## password: admin  
     
  # Group Member
  
