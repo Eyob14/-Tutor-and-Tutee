@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head th:object="${TuteeProfileModel}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="*{user.firstName} +' '+ *{user.lastName} + ' (' + *{user.role} +')' ">Tutee Name</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/css/profile.css}" rel="stylesheet" />
+    <link th:href="@{/css/common.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header class="row align-items-center ps-5 pe-5 shadow bg-body">
+        <div class="col fs-5">
+          <b><a href="/">THE TUTOR</a></b>
+        </div>
+        <div class="col text-end">
+        
+        </div>
+      </header>
+      
+      <div class="justify-content-center">
+        <div class="col-md-12 col-sm-12">
+            <div class="card flex-grow border-1 rounded-2 mt-3 mb-5 px-sm-2 px-lg-2 mx-lg-4 w-md-75">
+                <h1 class="card-header display-1 text-center text-danger">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </h1>
+                <h3 class="text-secondary h3">Page not found</h3>
+
+                <div class="card-subtitle mb-1 mt-3 text-dark text-center ">
+                    <p>We can't find the recource you've requested.</p>
+                    <p>Are you sure you're in the right place?</p>
+
+                </div>
+                <div class="card-body mx-auto ">
+                    <a type="button" href="login.html" th:href="@{/login} " class="btn btn-sm btn-primary text-white">Back To Home </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="text-center p-2 align-items-center justify-content-center">
+        <div class="footer_nav row">
+          <a href="/">Feed</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Saved</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="/">Other</a>
+          <br />
+          <br />
+        </div>
+        &copy; 2022 <b>THE TUTOR</b> - All Rights Reserved.
+      </footer>
+    </main>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+  </body>
+</html>
